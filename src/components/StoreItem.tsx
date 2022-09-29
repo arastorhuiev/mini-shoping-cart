@@ -31,13 +31,13 @@ export function StoreItem({ id, name, price, imgUrl }: StoreItemProps) {
           <span className='fs-2'>{name}</span>
           <span className='ms-2 text-muted'>{formatCurrency(price)}</span>
         </Card.Title>
-        <div className='mt-auto'>
+        <div className='mt-auto7'>
           {quantity === 0 ? (
             <Button className='w-100' onClick={() => increaseCartQuantity(id)}>+ Add To Cart</Button>
           ) : (
-            <div className='d-flex align-items-center' style={{ gap: '.5rem' }}>
+            <div className='d-flex align-items-center justify-content-center' style={{ gap: '.5rem' }}>
               <div
-                className='d-flex align-items-center justify-content-center'
+                className='d-flex'
                 style={{ gap: '.5rem' }}>
                 <Button onClick={() => increaseCartQuantity(id)}>+</Button>
                 <div>
